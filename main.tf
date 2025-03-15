@@ -1,16 +1,16 @@
 # Configure the Azure provider
 terraform {
   required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.90.0"
+      azurerm  = {
+      source   = "hashicorp/azurerm"
+      version  = "3.90.0"
     }
   }
   backend "azurerm" {
-    resource_group_name = "StorageRG"
+    resource_group_name  = "StorageRG"
     storage_account_name = "watchliststorage"
-    container_name = "watchlistcontainer"
-    key = "terraform.tfstate"
+    container_name       = "watchlistcontainer"
+    key                  = "terraform.tfstate"
   }
 }
 
