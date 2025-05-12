@@ -7,7 +7,7 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "StorageRG"
+    resource_group_name  = "WatchListRG33"
     storage_account_name = "watchliststorage"
     container_name       = "watchlistcontainer"
     key                  = "terraform.tfstate"
